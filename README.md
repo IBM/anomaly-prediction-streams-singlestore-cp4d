@@ -4,6 +4,8 @@
 1. [IBM Cloud Account](https://cloud.ibm.com)
 1. [IBM Cloud Pak for Data](https://cloud.ibm.com/catalog/content/ibm-cp-datacore-6825cc5d-dbf8-4ba2-ad98-690e6f221701-global)
 1. [Install Singlestore database on Cloud Pak for Data](https://docs.singlestore.com/v7.3/reference/memsql-operator-reference/additional-deployment-methods/helm-chart-for-ibm-cloud-pak-for-data/)
+1. [Java](https://www.java.com/en/)
+1. [Gradle](https://gradle.org/)
 
 ## Steps
 
