@@ -94,7 +94,7 @@ CREATE TABLE `data` (`id` int(11) DEFAULT NULL,`read_dt` datetime DEFAULT NULL,`
 
 ### Create a pipeline to consume data from Event Streams
 
-Run the below command to create the pipeline after replacing the [Broker 0 URL] with the broker 0 url we noted earlier(For example: broker-0-xxx.kafka.svc08.us-south.eventstreams.cloud.ibm.com:9093) and [API Key] with the api_key we noted earlier from credential:
+Run the below command to create the pipeline after replacing the [Broker 0 URL] with the `broker-0` url we noted earlier(For example: broker-0-xxx.kafka.svc08.us-south.eventstreams.cloud.ibm.com:9093) and [API Key] with the api_key we noted earlier from credential:
 ```
 CREATE PIPELINE `temperature_pipeline` AS LOAD DATA KAFKA '[Broker 0 URL]/tempreads' CONFIG '{"security.protocol": "sasl_ssl","sasl.mechanism": "PLAIN","ssl.certificate.location": "/etc/memsql/extra-secret/evtstreams.pem","sasl.username":"token"}' CREDENTIALS '{"ssl.key.password": "null","sasl.password": "[API Key]"}' INTO table data;
 ```
