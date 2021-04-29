@@ -3,14 +3,14 @@
 This Java application will send the data in the `tempdata.csv` file to IBM Event Streams.
 
 Steps to run the application:
-### Build the application
+### 1. Build the application
 
 Run the below command:
 ```
 gradle clean build
 ```
 
-### Run the application
+### 2. Run the application
 
 Run the below command:
 ```
