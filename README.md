@@ -1,5 +1,14 @@
 # Detect anamolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
 
+In this code pattern, you will see how to detect anamolies in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. 
+
+
+
+## Flow
+
+
+
+
 ## Prerequisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
 1. [IBM Cloud Pak for Data](https://cloud.ibm.com/catalog/content/ibm-cp-datacore-6825cc5d-dbf8-4ba2-ad98-690e6f221701-global)
