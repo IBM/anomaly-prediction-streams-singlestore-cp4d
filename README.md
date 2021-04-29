@@ -8,13 +8,13 @@
 ## Steps
 
 1. [Create an instance of IBM Event Streams](#1-create-an-instance-of-ibm-event-streams)
-2. [Note broker urls](#1-note-broker-urls)
-3. [Create credentials](#1-create-credentials)
-4. [Download the SSL certificate from Event Streams](#1-download-the-ssl-certificate-from-event-streams)
-5. [Upload the certificate to the Singlestore cluster](#1-upload-the-certificate-to-the-singlestore)
-6. [Create a database, table and pipeline](#1-create-a-database-table-and-pipeline)
-7. [Clone the repo](#1-clone-the-repo)
-8. [Build and run the application](#1-build-and-run-the-application)
+1. [Note broker urls](#1-note-broker-urls)
+1. [Create credentials](#1-create-credentials)
+1. [Download the SSL certificate from Event Streams](#1-download-the-ssl-certificate-from-event-streams)
+1. [Upload the certificate to the Singlestore cluster](#1-upload-the-certificate-to-the-singlestore)
+1. [Create a database, table and pipeline](#1-create-a-database-table-and-pipeline)
+1. [Clone the repo](#1-clone-the-repo)
+1. [Build and run the application](#1-build-and-run-the-application)
 
 ## 1. Create an instance of IBM Event Streams
 
