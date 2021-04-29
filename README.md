@@ -1,2 +1,1 @@
-# anamoly-prediction-streams-singlestore-cp4d
-Detect anamolies in streaming data
+# Detect anamolies in streaming IoT data using EventStreams and Singlestore database (Work in progress)
