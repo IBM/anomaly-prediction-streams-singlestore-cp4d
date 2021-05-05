@@ -8,7 +8,7 @@ In this code pattern, you will see how to detect anamolies in IoT event streams 
 
 ## Flow
 
-
+![arch](images/architecture.png)
 
 
 ## Prerequisites
