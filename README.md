@@ -157,7 +157,7 @@ java -jar ./build/libs/event-streams-producer-client-2.0.jar [kafka_brokers_sasl
 
 ![notebook](images/notebook.png)
 
-- Goto `From file` tab and upload the notebook `notebook/IoT-Forecasting.ipynb` and click on `Create` as shown below. 
+- Goto `From file` tab and upload the notebook `Notebook/IoT-Forecasting.ipynb` and click on `Create` as shown below. 
 
 ![upload_notebook](images/upload_notebook.gif)
 
