@@ -28,6 +28,7 @@ In this code pattern, you will see how to detect anamolies in IoT event streams 
 1. [Create a database, table and pipeline](#6-create-a-database-table-and-pipeline)
 1. [Clone the repo](#7-clone-the-repo)
 1. [Build and run the application](#8-build-and-run-the-application)
+9. [Deploy and run the AI model](#9-deploy-and-run-the-ai-model)
 
 ## 1. Create an instance of IBM Event Streams
 
@@ -135,3 +136,47 @@ java -jar ./build/libs/event-streams-producer-client-2.0.jar [kafka_brokers_sasl
 ```
 
 >Note: The kafka_brokers_sasl must be formatted as "host:port,host2:port2". If not, format the contents of kafka_brokers_sasl in a text editor before entering it in the command line.
+
+## 9. Deploy and run the AI model
+
+- Log into your `IBM Cloud Pak for Data` console.
+
+- Click on the menu tab and select all projects.
+
+- Create on `New project` tab.
+
+- Select `Analytics project` and click on `Next`.
+
+- Select `Create an empty project`.
+
+- Give a name to the project and click on `Create`.
+
+- Once the project is created you will be redirected to the project that you created. If you are not redirected to the project then navigate to the projects tab from main menu and then select the project that you created in step above.
+
+- Click on `Add to project` and Select `Notebook` as shown below.
+
+![notebook](images/notebook.png)
+
+- Goto `From file` tab and upload the notebook `notebook/IoT-Forecasting.ipynb` and click on `Create` as shown below. 
+
+![upload_notebook](images/upload_notebook.gif)
+
+- Once the notebook loads, fill the singlestore credentials as shown below.
+
+![singlestore_credentials](images/singlestore_credentials.png)
+
+- Click on `Cell` tab and click `Run All`.
+
+- Click on `File` tab and click `Save Version` as shown below.
+
+![save_version](images/save_version.png)
+
+- Go back to `Assets` and create a job as shown below.
+
+![create_job](images/create_job.gif)
+
+- Your job is now scheduled. Wait for sometime and then goto `Jobs` tab and check if the jobs are running.
+
+![view_jobs](images/view_jobs.png)
+
+- The results of the AI model will be stored into `predictions` table on singlestore database.
