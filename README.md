@@ -172,9 +172,22 @@ java -jar ./build/libs/event-streams-producer-client-2.0.jar [kafka_brokers_sasl
 
 ![save_version](images/save_version.png)
 
-- Go back to `Assets` and create a job as shown below.
+- Go back to `Assets` and create a job by following the gif in the dropdown below or alternatively you can follow the steps shown below.
 
-![create_job](images/create_job.gif)
+<details>
+<summary>Create Job</summary>
+<img alt="create_job" src="images/create_job.gif">
+</details>
+
+- Click on the three dots at the corner of the your notebook under `Notebooks` tab and select `Create Job`.
+
+- Under `Define details` give a name for the job under `Name` section and click `Next`.
+
+- Under `Configure` keep the default values and click `Next`.
+
+- Under `Schedule` enable the schedule toggle switch. Check the `Repeat` checkbox. From the dropdown select `minutes` and write 4 beside it. Click on `Next`.
+
+- Click on `Create`.
 
 - Your job is now scheduled. Wait for sometime and then goto `Jobs` tab and check if the jobs are running.
 
