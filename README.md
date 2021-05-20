@@ -30,7 +30,7 @@ In the chemical research plant, the containers containing various chemicals unde
 1. [Clone the repo](#7-clone-the-repo)
 1. [Build and run the application](#8-build-and-run-the-application)
 9. [Deploy and run the AI model on Cloud Pak for Data](#9-deploy-and-run-the-ai-model-on-cloud-pak-for-data)
-10. [Create dashboard using IBM Cognos Analytics](#10-create-dashboard-using-IBM-Cognos-Analyticson-cloud-pak-for-data)
+10. [Create dashboard using IBM Cognos Analytics on Cloud Pak for Data](#10-create-dashboard-using-IBM-Cognos-Analyticson-cloud-pak-for-data)
 
 ## 1. Create an instance of IBM Event Streams
 
