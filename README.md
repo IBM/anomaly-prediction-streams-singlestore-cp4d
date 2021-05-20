@@ -2,7 +2,8 @@
 
 
 # Detect anamolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
-In this code pattern, you will see how to detect anamolies in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. 
+
+In the chemical research plant, the containers containing various chemicals under study are required to be maintained within certain threshold. In our case the minimum temperature threshold is 27°F and maximum threshold is 30°F. In this code pattern, you will learn how to detect anamolies in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. You will also learn how to predict the container temperatures for future days and detect on which day would the container cross the threshold.
 
 
 
@@ -27,8 +28,8 @@ In this code pattern, you will see how to detect anamolies in IoT event streams 
 1. [Upload the certificate to the Singlestore cluster](#5-upload-the-certificate-to-the-singlestore)
 1. [Create a database, table and pipeline](#6-create-a-database-table-and-pipeline)
 1. [Clone the repo](#7-clone-the-repo)
-1. [Build and run the application](#8-build-and-run-the-application)
-9. [Deploy and run the AI model](#9-deploy-and-run-the-ai-model)
+1. [Build and run the application on CP4D](#8-build-and-run-the-application-on-cp4d)
+9. [Deploy and run the AI model on CP4D](#9-deploy-and-run-the-ai-model-on-cp4d)
 
 ## 1. Create an instance of IBM Event Streams
 
