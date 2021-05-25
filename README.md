@@ -8,7 +8,7 @@ This code pattern will cover anamoly detection in IoT event streams using IBM Ev
 
 Once you complete the code pattern, you will learn to:
 - Send IoT events to IBM Event Streams.
-- Create [Singlestore KAFKA pipelines] to consume event data from EventStreams and store the data in a Singlestore table inside IBM Cloud Pak for Data.
+- Create [Singlestore KAFKA pipelines](https://docs.singlestore.com/v7.3/guides/use-memsql/load-data/kafka/kafka-extractor/) to consume event data from EventStreams and store the data in a Singlestore table inside IBM Cloud Pak for Data.
 - Create a machine learning model to predict temperature events on IBM Cloud Pak for Data.
 - Create a Cognos dashboard to visualize the insights on IBM Cloud Pak for Data.
 
