@@ -1,11 +1,16 @@
-# (WORK IN PROGRESS)
-
-
 # Detect anamolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
 
-In the chemical research plant, the containers containing various chemicals under study are required to be maintained within certain threshold. In our case the minimum temperature threshold is 27°F and maximum threshold is 30°F. If container temperatures are too low or if container temperatures are too high, the consequences could be fatal. Hence, a swift action must be taken when the container temperature crosses the defined threshold. In this code pattern, you will learn how to detect anamolies in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. You will also learn how to predict the container temperatures for future days and detect on which day would the container cross the threshold.
+In the Internet of Things (IoT) world, the sensors send events periodically. This event data is stored, and the data scientist builds machine learning models for actionable insights on the data. The machine learning model can be a prediction model for the equipment parameter going outside of a certain threshhold.
 
+The following scenario is considered for this code pattern. In a chemical research plant, the containers containing various chemicals under study are required to be maintained within certain threshold. In our case the minimum temperature threshold is 27°F and maximum threshold is 30°F. If container temperatures are too low or if container temperatures are too high, the consequences could be fatal. Hence, a swift action must be taken when the container temperature crosses the defined threshold. 
 
+This code pattern will cover anamoly detection in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. It will also cover prediction of the container temperatures for future days and detect on which day would the container cross the threshold.
+
+Once you complete the code pattern, you will learn to:
+- Send IoT events to IBM Event Streams.
+- Create [Singlestore KAFKA pipelines](https://docs.singlestore.com/v7.3/guides/use-memsql/load-data/kafka/kafka-extractor/) to consume event data from EventStreams and store the data in a Singlestore table inside IBM Cloud Pak for Data.
+- Create a machine learning model to predict temperature events on IBM Cloud Pak for Data.
+- Create a Cognos dashboard to visualize the insights on IBM Cloud Pak for Data.
 
 ## Flow
 
@@ -281,4 +286,4 @@ See below screenshot to load metadata of the tables.
 
 ## Summary
 
-In this code pattern, We have demonstrated live streaming coming through event streams, it is a secure connection from SingleStore through pipeline which is the most efficient way to ingest into SingleStore database, so if it was a high volume we can still do that. We have also built AI model in Cloud Pak for Data environment using SingleStore as a persistent storage for building and deploy and then executing the model realtime and we also have visualisation of not only historical data but also predictions data showcasing in Cognos dashboards which is again on IBM Cloud Pak for Data.
+In this code pattern, you consumed streaming data from IBM Event Streams in a Singlestore database. It is a secure connection from SingleStore to EventStreams using a pipeline which is the most efficient way to ingest into SingleStore database. The Singlestore pipelines use parallel processors and can handle high volumes of data. You learnt how to build a machine learning model in Cloud Pak for Data environment using SingleStore as a persistent storage to build,deploy and execute the model realtime. Next, you also built the visualisation Dashboard of not only historical data but also predictions data showcasing in Cognos dashboards which is again on IBM Cloud Pak for Data.
