@@ -16,6 +16,10 @@ Once you complete the code pattern, you will learn to:
 
 ![arch](images/architecture.png)
 
+1. IoT temperature sensors send data to IBM Event Streams.
+2. Kafka pipelines in Singlestore consume data from IBM Event Streams and store data into tables.
+3. The AI model is built using the data in the Singlestore database to predict anamolies. The model output is stored back in the Singlestore database.
+4. A dashboard is displayed by Cognos using the AI model output in the Singlestore database.
 
 ## Prerequisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
