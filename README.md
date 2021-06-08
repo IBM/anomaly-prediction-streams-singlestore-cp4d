@@ -18,9 +18,9 @@ Once you complete the code pattern, you will learn to:
 
 1. IoT temperature sensors send data to IBM Event Streams.
 2. Kafka pipelines in Singlestore consume data from IBM Event Streams and store data into tables.
-3. The AI model is built using the data in the Singlestore database to predict anamolies. The model output is stored back in the Singlestore database.
+3. The AI model takes the sensor data from singlestore at regular intervals as input. The model forecasts the sensor data, predicts anomalies and stores back the anomaly data to singlestore.
 4. A dashboard is displayed by Cognos using the AI model output in the Singlestore database.
-
+5. 
 ## Prerequisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
 1. [IBM Cloud Pak for Data](https://cloud.ibm.com/catalog/content/ibm-cp-datacore-6825cc5d-dbf8-4ba2-ad98-690e6f221701-global)
