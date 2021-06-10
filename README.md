@@ -1,10 +1,10 @@
-# Detect anomolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
+# Detect anomalies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
 
 In the Internet of Things (IoT) world, the sensors send events periodically. This event data is stored, and the data scientist builds machine learning models for actionable insights on the data. The machine learning model can be a prediction model for the equipment parameter going outside of a certain threshhold.
 
 The following scenario is considered for this code pattern. In a chemical research plant, the containers containing various chemicals under study are required to be maintained within certain threshold. In our case the minimum temperature threshold is 27°F and maximum threshold is 30°F. If container temperatures are too low or if container temperatures are too high, the consequences could be fatal. Hence, a swift action must be taken when the container temperature crosses the defined threshold. 
 
-This code pattern will cover anomoly detection in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. It will also cover prediction of the container temperatures for future days and detect on which day would the container cross the threshold.
+This code pattern will cover anomaly detection in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. It will also cover prediction of the container temperatures for future days and detect on which day would the container cross the threshold.
 
 Once you complete the code pattern, you will learn to:
 - Send IoT events to IBM Event Streams.
