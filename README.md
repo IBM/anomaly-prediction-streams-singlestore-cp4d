@@ -1,4 +1,4 @@
-# Detect anamolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
+# Detect anomolies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
 
 In the Internet of Things (IoT) world, the sensors send events periodically. This event data is stored, and the data scientist builds machine learning models for actionable insights on the data. The machine learning model can be a prediction model for the equipment parameter going outside of a certain threshhold.
 
