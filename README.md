@@ -1,14 +1,14 @@
-# Detect anomalies in streaming IoT data using EventStreams and Singlestore database on Cloud Pak for Data
+# Detect anomalies in streaming IoT data using EventStreams and SingleStore database on Cloud Pak for Data
 
 In the Internet of Things (IoT) world, the sensors send events periodically. This event data is stored, and the data scientist builds machine learning models for actionable insights on the data. The machine learning model can be a prediction model for the equipment parameter going outside of a certain threshhold.
 
 The following scenario is considered for this code pattern. In a chemical research plant, the containers containing various chemicals under study are required to be maintained within certain threshold. In our case the minimum temperature threshold is 27°F and maximum threshold is 30°F. If container temperatures are too low or if container temperatures are too high, the consequences could be fatal. Hence, a swift action must be taken when the container temperature crosses the defined threshold. 
 
-This code pattern will cover anomaly detection in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [Singlestore](https://www.singlestore.com/) database. It will also cover prediction of the container temperatures for future days and detect on which day would the container cross the threshold.
+This code pattern will cover anomaly detection in IoT event streams using IBM Event Streams and IBM Cloud Pak for Data with [SingleStore](https://www.singlestore.com/) database. It will also cover prediction of the container temperatures for future days and detect on which day would the container cross the threshold.
 
 Once you complete the code pattern, you will learn to:
 - Send IoT events to IBM Event Streams.
-- Create [Singlestore KAFKA pipelines](https://docs.singlestore.com/v7.3/guides/use-memsql/load-data/kafka/kafka-extractor/) to consume event data from EventStreams and store the data in a Singlestore table inside IBM Cloud Pak for Data.
+- Create [SingleStore KAFKA pipelines](https://docs.singlestore.com/v7.3/guides/use-memsql/load-data/kafka/kafka-extractor/) to consume event data from EventStreams and store the data in a SingleStore table inside IBM Cloud Pak for Data.
 - Create a machine learning model to predict temperature events on IBM Cloud Pak for Data.
 - Create a Cognos dashboard to visualize the insights on IBM Cloud Pak for Data.
 
@@ -17,14 +17,14 @@ Once you complete the code pattern, you will learn to:
 ![arch](images/architecture.png)
 
 1. IoT temperature sensors send data to IBM Event Streams.
-2. Kafka pipelines in Singlestore consume data from IBM Event Streams and store data into tables.
+2. Kafka pipelines in SingleStore consume data from IBM Event Streams and store data into tables.
 3. The AI model on IBM Cloud Pak for Data takes the sensor data from singlestore at regular intervals as input. The model forecasts the sensor data, predicts anomalies and stores back the anomaly data to singlestore.
-4. A dashboard is displayed by Cognos on IBM Cloud Pak for Data using the AI model output in the Singlestore database.
+4. A dashboard is displayed by Cognos on IBM Cloud Pak for Data using the AI model output in the SingleStore database.
 
 ## Prerequisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
 1. [IBM Cloud Pak for Data](https://cloud.ibm.com/catalog/content/ibm-cp-datacore-6825cc5d-dbf8-4ba2-ad98-690e6f221701-global)
-1. [Install Singlestore database on Cloud Pak for Data](https://docs.singlestore.com/v7.3/reference/memsql-operator-reference/additional-deployment-methods/helm-chart-for-ibm-cloud-pak-for-data/)
+1. [Install SingleStore database on Cloud Pak for Data](https://docs.singlestore.com/v7.3/reference/memsql-operator-reference/additional-deployment-methods/helm-chart-for-ibm-cloud-pak-for-data/)
 1. [Java](https://www.java.com/en/)
 1. [Gradle](https://gradle.org/)
 
@@ -34,7 +34,7 @@ Once you complete the code pattern, you will learn to:
 1. [Note broker urls](#2-note-broker-urls)
 1. [Create credentials](#3-create-credentials)
 1. [Download the SSL certificate from Event Streams](#4-download-the-ssl-certificate-from-event-streams)
-1. [Upload the certificate to the Singlestore cluster](#5-upload-the-certificate-to-the-singlestore)
+1. [Upload the certificate to the SingleStore cluster](#5-upload-the-certificate-to-the-singlestore)
 1. [Create a database, table and pipeline](#6-create-a-database-table-and-pipeline)
 1. [Clone the repo](#7-clone-the-repo)
 1. [Build and run the application](#8-build-and-run-the-application)
@@ -74,7 +74,7 @@ openssl s_client -connect [broker-xxx-eventstreams.cloud.ibm.com:9093] -serverna
 ```
 The Event Streams certificate will be stored in a file `evtstreams.pem`.
 
-## 5. Upload the certificate to the Singlestore cluster
+## 5. Upload the certificate to the SingleStore cluster
 
 Login to the Cloud Pak For Data cluster:
 
@@ -290,4 +290,4 @@ See below screenshot to load metadata of the tables.
 
 ## Summary
 
-In this code pattern, you consumed streaming data from IBM Event Streams in a Singlestore database. It is a secure connection from SingleStore to EventStreams using a pipeline which is the most efficient way to ingest into SingleStore database. The Singlestore pipelines use parallel processors and can handle high volumes of data. You learnt how to build a machine learning model in Cloud Pak for Data environment using SingleStore as a persistent storage to build,deploy and execute the model realtime. Next, you also built the visualisation Dashboard of not only historical data but also predictions data showcasing in Cognos dashboards which is again on IBM Cloud Pak for Data.
+In this code pattern, you consumed streaming data from IBM Event Streams in a SingleStore database. It is a secure connection from SingleStore to EventStreams using a pipeline which is the most efficient way to ingest into SingleStore database. The SingleStore pipelines use parallel processors and can handle high volumes of data. You learnt how to build a machine learning model in Cloud Pak for Data environment using SingleStore as a persistent storage to build,deploy and execute the model realtime. Next, you also built the visualisation Dashboard of not only historical data but also predictions data showcasing in Cognos dashboards which is again on IBM Cloud Pak for Data.
