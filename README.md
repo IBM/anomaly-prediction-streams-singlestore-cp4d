@@ -215,13 +215,13 @@ There are 3 major steps to build a dashboard on IBM Cognos Analytics:
 
 ### i. Create a connection to singlestore database
 
-Launch IBM Cognos Analytics from CP4D instance console or ask the administrator to provide the Cognos Analytics url.
+Launch IBM Cognos Analytics from IBM Cloud Pak for Data instance console or ask the administrator to provide the Cognos Analytics url.
 
-- Firstly, launch CP4D instance by using url provided by your adminstrator.
-See the below screenshot of the CP4D login page. Provide appropriate credentials given by your administrator.
+- Firstly, launch IBM Cloud Pak for Data instance by using url provided by your adminstrator.
+See the below screenshot of the IBM Cloud Pak for Data login page. Provide appropriate credentials given by your administrator.
 ![](images/CP4DLoginScreen.png)
 
-Now you will see a CP4D Home page as follows:
+Now you will see a IBM Cloud Pak for Data Home page as follows:
 ![](images/CP4DHomePage.png)
 
 - Click on burger menu bar and click on `Instances` under services tab to see the installed services. Here we want to see if Cognos Analytics is installed. See below screenshot for details.
